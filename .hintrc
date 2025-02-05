@@ -15,6 +15,7 @@
       {
         "document-title": "off"
       }
-    ]
+    ],
+    "typescript-config/consistent-casing": "off"
   }
 }

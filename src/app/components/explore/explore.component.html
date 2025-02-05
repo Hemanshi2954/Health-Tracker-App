@@ -18,10 +18,10 @@
         </select>
     </form>
 
-    @if(filteredUserData()?.length === 0) {
+    @if(filteredUserData().length === 0) {
     <p class="mt-6 text-xl text-center">No workouts found</p>
     } @else {
-    <p class="mt-6 text-xl text-center">Workouts found: {{ filteredUserData()?.length }}</p>
+    <p class="mt-6 text-xl text-center">Workouts found: {{ filteredUserData().length }}</p>
 
     <table class="mt-6 w-full bg-slate-200 border border-black">
 
