@@ -42,7 +42,6 @@ export class AddWorkoutComponent {
 
   onSubmit() {
  
-    // check if the form is valid
     if (!this.workoutForm.valid) {
       return;
     }
@@ -50,7 +49,6 @@ export class AddWorkoutComponent {
     const formValue = this.workoutForm.value;
     console.warn(formValue);
 
-    // Retrieve existing userData from localStorage
     const storedData = localStorage.getItem('userData');
     let userData = storedData ? JSON.parse(storedData) : [];
 
@@ -71,7 +69,6 @@ export class AddWorkoutComponent {
 
     localStorage.setItem('userData', JSON.stringify(userData));
 
-    // Redirect to explore page
     this.router.navigate(['/explore']);
   }
 }

@@ -21,7 +21,6 @@ interface UserData {
   styleUrl: './user.component.css',
 })
 export class UserComponent {
-  // get user from the route params
   
   user: UserData | null = null;
   basicData: any =null;
@@ -29,7 +28,6 @@ export class UserComponent {
 
   constructor(private router: Router, private route: ActivatedRoute) {}
   ngOnInit() {
-    //const username = this.router.url.split('/')[1];
     const username = this.route.snapshot.paramMap.get('username')!;
     const userData = JSON.parse(localStorage.getItem('userData') || '[]');
     this.user =

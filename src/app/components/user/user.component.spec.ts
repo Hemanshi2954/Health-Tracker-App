@@ -20,7 +20,7 @@ describe('UserComponent', () => {
           useValue: {
             snapshot: {
               paramMap: {
-                get: () => 'testuser' // Mocking route param
+                get: () => 'testuser' 
               }
             }
           }
@@ -44,7 +44,7 @@ describe('UserComponent', () => {
   });
 
   it('should initialize chart data correctly when user data exists', () => {
-    // Simulate user data
+    
     const userData = {
       id: 1,
       name: 'testuser',
@@ -55,14 +55,11 @@ describe('UserComponent', () => {
       ]
     };
 
-    // Set localStorage mock
     spyOn(localStorage, 'getItem').and.returnValue(JSON.stringify([userData]));
 
-    // Call ngOnInit directly to initialize component
     component.ngOnInit();
     fixture.detectChanges();
 
-    // Check chart data initialization
     expect(component.basicData).toBeTruthy();
     expect(component.basicData.labels).toEqual(['Running', 'Cycling', 'Swimming']);
     expect(component.basicData.datasets.length).toEqual(1);
@@ -70,14 +67,12 @@ describe('UserComponent', () => {
   });
 
   it('should not initialize chart data if user data is not found', () => {
-    // Set localStorage mock with empty array
+    
     spyOn(localStorage, 'getItem').and.returnValue(JSON.stringify([]));
 
-    // Call ngOnInit directly to initialize component
     component.ngOnInit();
     fixture.detectChanges();
 
-    // Check that basicData remains undefined
     expect(component.basicData).toBeUndefined();
   });
 });

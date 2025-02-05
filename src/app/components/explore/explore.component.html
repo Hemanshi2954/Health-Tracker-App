@@ -4,8 +4,6 @@
         Explore Workouts
     </h1>
 
-    <!-- Searchbar and category dropdown -->
-
     <form [formGroup]="filterForm" class="mt-6 flex items-center gap-3">
         <input formControlName="name" type="text" placeholder="Search by name"
             class="py-2 px-4 focus:outline-none border border-black" />
@@ -37,7 +35,7 @@
         </thead>
 
         @for (user of paginatedData; track $index) {
-        <!-- list the workouts -->
+        
         <tr class="border border-gray-800 p-3">
             <td><a  routerLink="/{{user.name}}" class="p-3 text-center flex items-center justify-center underline">{{user.name}}</a></td>
             <td class="p-3 text-center">{{ getWorkoutTypes(user.workouts) }}</td>
@@ -48,7 +46,7 @@
     </table>
     }
 
-    <!-- pagination -->
+    
 
     <div class="mt-6 flex items-center justify-center gap-3">
         <button class="p-2 border border-black hover:bg-black transition-all hover:text-white" (click)="prevPage()"
@@ -58,7 +56,7 @@
 
             <p>Results per page: </p>
         <select name="noOfPages" id="noOfPages" (change)="changeItemsPerPage($event)">
-            <!-- <option value="2">2</option> -->
+            
             <option value="5">5</option>
             <option value="10">10</option>
             <option value="15">15</option>

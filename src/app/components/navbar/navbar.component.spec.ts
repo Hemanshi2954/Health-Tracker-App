@@ -35,9 +35,9 @@ describe('NavbarComponent', () => {
   it('should render the navigation links', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const links = compiled.querySelectorAll('ul li a');
-    expect(links.length).toBe(3); // Ensure there are three navigation links
+    expect(links.length).toBe(3);
 
-    // Check each link
+    
     expect(links[0].textContent).toContain('HOME');
     expect(links[1].textContent).toContain('EXPLORE');
     expect(links[2].textContent).toContain('ADD');
@@ -51,11 +51,9 @@ describe('NavbarComponent', () => {
 
     expect(homeLink).toBeTruthy();
 
-    // Simulate a click on the HOME link
     homeLink!.dispatchEvent(new MouseEvent('click'));
     fixture.detectChanges();
 
-    // Assert that the router has navigated to the HOME page
     expect(router.navigateByUrl).toHaveBeenCalledWith('/');
   });
 
@@ -67,11 +65,9 @@ describe('NavbarComponent', () => {
 
     expect(exploreLink).toBeTruthy();
 
-    // Simulate a click on the EXPLORE link
     exploreLink!.dispatchEvent(new MouseEvent('click'));
     fixture.detectChanges();
 
-    // Assert that the router has navigated to the EXPLORE page
     expect(router.navigateByUrl).toHaveBeenCalledWith('/explore');
   });
 
@@ -83,11 +79,9 @@ describe('NavbarComponent', () => {
 
     expect(addLink).toBeTruthy();
 
-    // Simulate a click on the ADD WORKOUT link
     addLink!.dispatchEvent(new MouseEvent('click'));
     fixture.detectChanges();
 
-    // Assert that the router has navigated to the ADD WORKOUT page
     expect(router.navigateByUrl).toHaveBeenCalledWith('/add-workout');
   });
 });
