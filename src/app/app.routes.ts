@@ -14,13 +14,16 @@ export const routes: Routes = [
     component: AddWorkoutComponent,
   },
   {
-    path:'explore',
-    component:ExploreComponent
+    path: 'explore',
+    component: ExploreComponent
   },
   {
-    
+
     path: ':username',
     component: UserComponent
   },
-
+  { 
+    path: '**',
+    redirectTo: '' 
+  },
 ];
