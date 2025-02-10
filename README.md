@@ -2,6 +2,8 @@
 
 Welcome to the **Health Challenge Tracker** app! This application allows users to track their health challenges, including progress, filtering challenges, and visualizing data with optional charting features.
 
+
+
 ## Features
 - **User Input**: Users can input their health challenge details like name, description, and status.
 - **Search**: Quickly find health challenges with search functionality.
