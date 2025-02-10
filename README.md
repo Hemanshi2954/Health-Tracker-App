@@ -1,19 +1,23 @@
-# Health Challenge Tracker
+# 🏋️ Health Challenge Tracker
 
 Welcome to the **Health Challenge Tracker** app! This application allows users to track their health challenges, including progress, filtering challenges, and visualizing data with optional charting features.
 
+<img src="./public/homepage.png" alt="homepage">
+<img src="./public/addpage.png" alt="addpage">
+<img src="./public/explorepage.png" alt="explorepage">
+<img src="./public/chartpage.png" alt="chartpage">
 
 
-## Features
-- **User Input**: Users can input their health challenge details like name, description, and status.
-- **Search**: Quickly find health challenges with search functionality.
-- **Filtering**: Filter challenges based on status or type.
-- **Pagination**: Navigate through multiple pages of health challenges.
-- **Chart Visualization**: Optionally visualize the health challenges using charts.
-- **Data Persistence**: The application uses `localStorage` to persist user data.
-- **Unit Testing**: The app includes unit tests with 100% coverage for better reliability.
+## 🚀 Features
+- ✅ **User Input**: Users can input their health challenge details like name, description, and status.
+- ✅ **Search**: Quickly find health challenges with search functionality.
+- ✅ **Filtering**: Filter challenges based on status or type.
+- ✅ **Pagination**: Navigate through multiple pages of health challenges.
+- ✅ **Chart Visualization**: Optionally visualize the health challenges using charts.
+- ✅ **Data Persistence**: The application uses `localStorage` to persist user data.
+- ✅ **Unit Testing**: The app includes unit tests with 100% coverage for better reliability.
 
-## Tech Stack
+## 📦 Tech Stack
 - **Angular 14+**: For building the single-page application (SPA).
 - **Tailwind CSS**: For styling the user interface.
 - **localStorage**: For storing data on the user's browser.
@@ -26,7 +30,10 @@ Here is an overview of the main files and directories:
 - `app.config.ts`: Configuration file to set up the application's dependencies and environment.
 - `app.routes.ts`: Contains all the routes for navigating between different parts of the app.
 
-## Installation
+## 📜 Live Demo
+🔗 [Health Tracker](https://health-tracker-app-7nu2.onrender.com)
+
+##  📥 Installation
 
 To run the app locally, follow these steps:
 
@@ -43,4 +50,12 @@ To run the app locally, follow these steps:
    ```bash
    ng serve
 5. Visit http://localhost:4200 in your browser to access the app.
+
+## 🚀 Deployment
+
+This application is deployed on Render / Vercel / Netlify. To deploy your own version:
+
+Fork this repository
+Connect it to Vercel / Netlify
+Deploy directly from the repository
  
